@@ -174,56 +174,102 @@ transform-origin: 0 0;
    
   }
   .star-s7:hover{
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
     /* visibility: visible; */
-    background-color: red;
   }
   
-  .star-s8{
-    top: 44%;
-    left: 39%;
-    position: absolute;
-    width: 1.7px;
-    height: 1.7px;
-    background-color: #FF9F1C;
-    border-radius: 50%;
-   
+ 
+  
+  .pos-star2 {
+    top: 550px;
+    left: 450px;
   }
   
+  .pos-star3 {
+    top: 290px;
+    left: 75%;
+  }
+  
+  
 
-/* .circle{
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    background-color: rgb(243, 81, 41);
-    margin-top: 20%;
-    justify-content: center;
-    position: fixed;
-    animation:  heeart 1s linear 1s infinite alternate forwards;
-
-/* transform: translate(-50%, -50%); */
-
-/* 
-    .moon{
-        width: 230px;
-        height: 230px;
+      .star {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        display: block;
         border-radius: 50%;
-        background-color: rgb(41, 61, 243);
-        animation: 3.2s cresent linear infinite alternate;
-
-    }
-    @keyframes heeart{
-        from{width: 30px;height: 30px;}
-        to{width: 100px;height: 100px;}
-    }
-
-    img{
-        border-radius: 50%;
-    }
-    @media (max-width: 768px) {
-        .circle{
-          width: 260px;
-          height: 260px;
+        float: left;
+        position: absolute;
+        transform-origin: 50% 50%;
+        animation-name: star3;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        transform-origin: 50% 50%;
+        transition: all 0.3s ease-out;
+      }
+      
+      .star:before {
+        width: 20px;
+        height: 20px;
+        content: "";
+        background-color: white;
+        position: absolute;
+        transform: scale(1, 2) rotate(45deg);
+        animation-name: star1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        border-radius: 20%;
+        transition: all 0.3s ease-out;
+      }
+      
+      .star:after {
+        width: 20px;
+        height: 20px;
+        content: "";
+        background-color: white;
+        position: absolute;
+        transform: scale(2, 1) rotate(45deg);
+        animation-name: star2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-delay: 0.2s;
+        border-radius: 20%;
+        transition: all 0.3s ease-out;
+      }
+      
+      @keyframes star1 {
+        0% {
+          transform: scale(1, 2) rotate(45deg);
         }
-      } */ 
+        50% {
+          transform: scale(1, 1) rotate(45deg);
+        }
+        100% {
+          transform: scale(1, 2) rotate(45deg);
+        }
+      }
+      
+      @keyframes star2 {
+        0% {
+          transform: scale(2, 1) rotate(45deg);
+        }
+        50% {
+          transform: scale(1, 1) rotate(45deg);
+        }
+        100% {
+          transform: scale(2, 1) rotate(45deg);
+        }
+      }
+      
+      @keyframes star3 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+    }
