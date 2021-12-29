@@ -1,0 +1,229 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: rgb(17, 17, 39);
+  }
+
+
+  .circle{
+    background-color: rgba(162, 162, 162, 0.81);
+   transform: translate(-50%,50%)rotate(286deg);
+   
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    position: relative;
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+      animation: 3.2s circle2 linear infinite alternate;
+    }
+  
+
+
+.moon{
+background-color: rgb(11, 10, 49);
+transform:translate(-5%,-5%)rotate(347deg);
+animation: pulsate 1 linear 3s infinite forwards forwards;
+}
+@keyframes circle2{
+    0%{
+      transform: translate(-30px, 30px) scale(0.9);
+      box-shadow: none;
+    }
+    50%{
+      transform: translate(0px, 0px) scale(1.02);
+      box-shadow: 0 0 10px lighten( 30%), 0 0 80px 8px ;
+      background-color: bisque;
+    }
+    100%{
+      transform: translate(30px, -30px) scale(0.9);
+      box-shadow: none;
+    }
+  }
+
+.div-inner{
+
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin-top: 20%;
+    justify-content: center;
+transform-origin: 0 0; 
+ }
+
+ @keyframes circle1 {
+    from{width: 30px;height: 30px;}
+    to{width: 100px;height: 100px;}
+   
+}
+
+
+.star{
+    top: 20%;
+    left: 35%;
+    position: absolute;
+    width: 5px;
+    height: px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    animation: star11 2s linear infinite;
+  
+  }
+  @keyframes star11 {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+  .star-s1{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+     }
+  
+  .star-s2{
+    top: 68%;
+    left: 5%;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+  
+  }
+  
+  .star-s3{
+    top: 48%;
+    left: 75%;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+  ;
+  }
+  
+  .star-s4{
+    top: 88%;
+    left: 75%;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+   
+  }
+  
+  .star-s5{
+    top: 45%;
+    left: 9%;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+  }
+  
+  .star-s6{
+    top: 55%;
+    left: 29%;
+    position: absolute;
+    width: 0.7px;
+    height: 0.7px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+  }
+  .star-s7{
+    top: 14%;
+    left: 19%;
+    position: absolute;
+    width: 0.7px;
+    height: 0.7px;
+    background-color: #FF9F1C;
+    border-radius: 50%;
+    transition: all ease 5s;
+
+   
+  }
+  .star-s7:hover{
+    height: 300px;
+    width: 300px;
+    /* visibility: visible; */
+    background-color: red;
+  }
+  
+  .star-s8{
+    top: 44%;
+    left: 39%;
+    position: absolute;
+    width: 1.7px;
+    height: 1.7px;
+    background-color: #FF9F1C;
+    border-radius: 50%;
+   
+  }
+  
+
+/* .circle{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-color: rgb(243, 81, 41);
+    margin-top: 20%;
+    justify-content: center;
+    position: fixed;
+    animation:  heeart 1s linear 1s infinite alternate forwards;
+
+/* transform: translate(-50%, -50%); */
+
+/* 
+    .moon{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: rgb(41, 61, 243);
+        animation: 3.2s cresent linear infinite alternate;
+
+    }
+    @keyframes heeart{
+        from{width: 30px;height: 30px;}
+        to{width: 100px;height: 100px;}
+    }
+
+    img{
+        border-radius: 50%;
+    }
+    @media (max-width: 768px) {
+        .circle{
+          width: 260px;
+          height: 260px;
+        }
+      } */ 
